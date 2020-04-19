@@ -1,6 +1,128 @@
+/* General  */
 body{
     font-family: 'Open Sans', sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
 }
+/* Titles  */
 h1,h2,h3,h4{
-    font-family: 'Baloo Tammudu 2', cursive;
+    /* font-family: 'Baloo Tammudu 2', cursive; */
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    box-sizing: border-box;
+    align-content: center;
+    font-size: 4em;
+    color: green;
+}
+
+.title-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: gray; */
+    color: white;
+    margin-top: 0px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.title-c1{
+    background-color: #8BE896;
+}
+.title-c2{
+    background-color: #E3BFFF;
+}
+.title-c3{
+    background-color:#62B382;
+}
+
+/* Sections  */
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.text-box{
+    width: 100%;
+    font-size: 15px;
+    overflow: visible;
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 5%;
+}
+
+.content{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    position: relative;
+    text-align: justify;
+    border-radius: 5px;
+    background-color: #8BE8CB;
+    color:black;
+}
+
+.content:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px gray;
+}
+
+/* Media queris  */
+@media screen and (max-width: 767px){
+    .box-content{
+        max-width: 100%;
+        width: 100%;
+        height: fit-content;
+        flex: 0 0 100%;
+        /* border: 1px solid green; */
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .box-content{
+        max-width: 50%;
+        width: 100%;
+        height: fit-content;
+        flex: 0 0 50%;
+        /* border: 1px solid green; */
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    #content-3{
+        max-width: 100%;
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .box-content{
+        max-width: 33.3333%;
+        width: 100%;
+        height: fit-content;
+        flex: 0 0 33.33333%;
+        /* border: 1px solid green; */
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    
 }
